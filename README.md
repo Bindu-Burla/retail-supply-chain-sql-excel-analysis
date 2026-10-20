@@ -1,39 +1,77 @@
-Retail Supply Chain & Sales Performance Analysis
-Project Overview
-This project analyzes retail sales, profitability, and shipping performance using SQL and Excel, based on a multi-year retail supply chain dataset. The goal was to answer real business questions around profitability, discounting strategy, shipping efficiency, and customer value — the kind of questions commonly asked in data analyst interviews.
-Tools Used
+# Retail Supply Chain & Sales Performance Analysis
 
-SQLite (DB Browser) — data querying and cleaning
-Microsoft Excel — pivot analysis, dashboard visualization
+> SQL + Excel analytics project focused on profitability, discount strategy, shipping performance, customer value, and management-ready reporting.
 
-Business Questions Answered
+## Project Overview
 
-Which regions generate the most sales and profit?
-Which product sub-categories are profitable vs. losing money?
-Does discounting strategy affect profitability?
-How does shipping time vary by region and shipping method?
-Which products and customers drive the most revenue and profit?
+This project analyzes a multi-year retail supply-chain dataset using **SQLite and Microsoft Excel**. The objective is to turn raw transactional data into clear business findings that can support pricing, product, customer, and logistics decisions.
 
-Key Insights
+### Skills Demonstrated
 
-Furniture sub-categories are losing money: Tables (-$17,725) and Bookcases (-$3,472) are unprofitable despite meaningful sales volume, while Technology sub-categories like Copiers (+$55,617) and Phones (+$44,516) lead in profitability.
-Discounting is directly linked to losses: Furniture sub-categories with average discounts above 20% (Tables, Bookcases) operate at a net loss, while sub-categories with discounts under 18% (Chairs, Furnishings) remain solidly profitable.
-Shipping times vary significantly by method and region: "Same Day" shipping is near-instant (under 0.3 days), while "Standard Class" shipping averages 30-44 days depending on region, with Central region showing the longest average (44 days) — a potential logistics bottleneck.
-Central region shows strong customer concentration: 3 of the top 6 highest-spending customers are based in the Central region, suggesting a valuable customer base worth targeted retention strategies.
-Sales growth has outpaced profit growth over time: the multi-year trend shows sales climbing steadily, while profit remains comparatively flat and volatile — reinforcing the discount-driven margin erosion seen at the sub-category level.
+`SQL` · `SQLite` · `Excel` · `PivotTables` · `Data Cleaning` · `Exploratory Data Analysis` · `KPI Reporting` · `Business Analysis`
 
-Dashboard Preview
-<img width="779" height="527" alt="dashboard" src="https://github.com/user-attachments/assets/82da3287-b681-417c-be9f-a575234326fc" />
+## Business Questions
 
-Files in this Repository
+- Which regions generate the most sales and profit?
+- Which product sub-categories are profitable and which are losing money?
+- How does discounting relate to profitability?
+- How does shipping time vary by region and shipping method?
+- Which products and customers contribute the most revenue and profit?
+- How have sales and profit changed over time?
 
-retail_supply_chain.db — SQLite database
-queries.sql — all analysis queries, commented
-Retail_Analysis_Dashboard.xlsx — Excel dashboard with pivot tables and charts
-dashboard_preview.pdf — preview image in pdf
+## Key Findings
 
-How to Reproduce
+| Area | Finding |
+|---|---|
+| Product profitability | Tables (-$17,725) and Bookcases (-$3,472) were loss-making, while Copiers (+$55,617) and Phones (+$44,516) led profitability. |
+| Discount strategy | Loss-making Furniture sub-categories also showed average discounts above 20%, indicating margin pressure associated with heavier discounting. |
+| Shipping | Same Day shipping averaged under 0.3 days, while Standard Class averaged roughly 30–44 days depending on region. |
+| Regional operations | Central had the longest average Standard Class shipping time at about 44 days, highlighting a potential logistics bottleneck. |
+| Customer value | Three of the six highest-spending customers identified in the analysis were in Central. |
+| Trend | Sales increased over the analyzed period while profit remained comparatively flatter and more volatile. |
 
-Open retail_supply_chain.db in DB Browser for SQLite
-Run queries from queries.sql to reproduce each analysis
-Open Retail_Analysis_Dashboard.xlsx to view the interactive dashboard
+## Dashboard Preview
+
+![Retail Analysis Dashboard](https://github.com/user-attachments/assets/82da3287-b681-417c-be9f-a575234326fc)
+
+The interactive Excel workbook contains PivotTable-based analysis and charts for business performance monitoring.
+
+## Analysis Workflow
+
+1. Loaded the retail dataset into SQLite.
+2. Used SQL for filtering, aggregation, joins, KPI calculation, and business-question analysis.
+3. Validated and summarized results for reporting.
+4. Built Excel PivotTables and charts.
+5. Created a dashboard to communicate the most important findings.
+
+## Repository Structure
+
+| File | Purpose |
+|---|---|
+| `queries.sql` | Documented SQL analysis queries |
+| `retail_supply_chain.db` | SQLite database used for analysis |
+| `Retail_Analysis_Dashboard.xlsx` | Excel analysis/dashboard workbook |
+| `dashboard_preview.pdf` | Dashboard preview |
+| `Retail_Analysis_Dashboard_made.xlsx` | Additional workbook version retained in the repository |
+
+## How to Reproduce
+
+1. Open `retail_supply_chain.db` using DB Browser for SQLite or another SQLite client.
+2. Run the queries in `queries.sql`.
+3. Open `Retail_Analysis_Dashboard.xlsx` in Microsoft Excel.
+4. Review the PivotTables, charts, KPIs, and dashboard findings.
+
+## Business Recommendations
+
+- Review discount levels for loss-making Furniture sub-categories before expanding promotions.
+- Investigate Standard Class shipping performance in Central.
+- Prioritize retention and targeted offers for high-value customers.
+- Track profit alongside sales growth so revenue gains do not hide margin deterioration.
+
+## What This Project Demonstrates
+
+This project shows my ability to move from **raw data → SQL analysis → Excel reporting → business recommendations**, with emphasis on communicating findings in a way that is useful to decision-makers.
+
+---
+**Author:** Bindu Burla  
+**Focus:** Data Analytics · SQL · Excel · Business Intelligence
